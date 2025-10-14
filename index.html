@@ -54,6 +54,17 @@
       font-size: 16px;
       line-height: 1.6;
     }
+    /* 修改后的样式：用于突出显示日期声明 */
+    .date-notice {
+        font-size: 16px; /* 保持与普通文本大小一致 */
+        font-style: normal; /* 不使用斜体 */
+        font-weight: 700; /* 粗体 */
+        color: #ff8c00; /* 强调色 */
+        margin-top: -10px; /* 调整与 H1 的间距 */
+        margin-bottom: 20px; /* 调整与下一节的间距 */
+        display: block;
+    }
+    
     ul {
       list-style: none;
       padding: 0;
@@ -148,7 +159,8 @@
       <img src="20250929-022250.jpg" alt="Chang Li portrait" class="avatar" onclick="showModal('Chang Li', 'hello world')" />
       <div>
         <h1>Chang Li</h1>
-
+        <p class="date-notice">⚠️ All information is current as of September 2025</p>
+        
         <section>
           <h2>Interests</h2>
           <p>Audio, Speech and Music · Generative Modeling · Representation Learning and Transferring</p>
@@ -172,13 +184,11 @@
           <a class="btn" href="https://www.xiaohongshu.com/user/profile/665c24aa0000000007004318" target="_blank">小红书</a>
         </div>
 
-        <!-- <div class="footer">© <span id="y"></span> Chang Li</div> -->
-      </div>
+              </div>
     </div>
   </main>
 
-  <!-- Modal -->
-  <div id="modal" class="modal">
+    <div id="modal" class="modal">
     <div class="modal-content">
       <div id="modal-title"></div>
       <code id="modal-value"></code>
@@ -186,7 +196,7 @@
         <button class="modal-btn" onclick="copyValue()">Copy</button>
         <button class="modal-btn" onclick="closeModal()">Close</button>
       </div>
-    </div>
+      </div>
   </div>
 
   <script>
